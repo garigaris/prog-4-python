@@ -22,7 +22,6 @@ class CBCCurrencyComponent(Component):
 
         try:
             response = requests.get(self._url)
-            response.raise_for_status()
             data = response.json()
 
             valute_data = []
